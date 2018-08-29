@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6a1efcf0-a129-4f75-afcb-86a2ace64ae9" name="Apache Web" url="http://localhost/playground">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\playground" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Apache Server" deleteMissingItems="true" createEmptyFolders="true">
+    <serverData>
+      <paths name="Apache Server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="AJAX-7" local="$PROJECT_DIR$" web="/AJAX-7" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
