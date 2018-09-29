@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Google Map</title>
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <!--<script type="text/javascript"  src="js/table.js"></script>-->
+
+</head>
+<script>
+
+
+    function check() {
+        var x=1;
+
+        var myTableArray = [];
+        var table = document.getElementById("cartGrid");
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        cell1.innerHTML = 'address';
+        cell2.innerHTML = 'ff';
+        cell3.innerHTML = x++;
+
+
+        $("table#cartGrid tr").each(function() {
+            var arrayOfThisRow = [];
+            var tableData = $(this).find('td');
+            if (tableData.length > 0) {
+                tableData.each(function() { arrayOfThisRow.push($(this).text()); });
+                myTableArray.push([arrayOfThisRow]);
+            }
+        });
+
+        alert(myTableArray);
+        alert(myTableArray.length);
+
+        var i;
+        for(i=0;myTableArray.length>i;i++){
+            alert('runtime'+i);
+        }
+
+    }
+
+//    var locations = [
+//        ['Nalagasdeniya',6.1378, 80.1139] ,
+//        ['Hikkaduwa', 6.1395, 80.1063],
+//        ['Galle',6.0250, 80.2180]
+//    ];
+
+</script>
+
+<style>
+    table, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+
+<table id="cartGrid">
+    <thead>
+    </thead>
+    <tbody>
+    <tr><td>Old Lamp</td>
+        <td>1</td>
+        <td>107.00</td>
+    <tr>
+        <td>2</td>
+        <td>7.00</td>
+        <td>14.00</td>
+    </tbody>
+</table>
+
+<br>
+
+<button onclick="check()">Click</button>
+</body>
+
+</html>
